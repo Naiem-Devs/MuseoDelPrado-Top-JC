@@ -1,0 +1,664 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+       
+    <!-- header-area START -->
+    <div class="header-area">
+        <div class="container lg">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-3 col-6 ">
+                    <div class="logo-area">
+                        <a href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7  d-none d-md-block text-right">
+                    <div class="menu-area">
+                        <nav>
+                            <ul id="nav">
+                                <li><a href="#" class="active">COMPRA TUS TICKETS</a></li>
+                                <li><a href="#">Horarios</a></li> 
+                                <li><a href="#">Como llegar</a></li> 
+                                <li><a href="#">Normativas</a></li>  
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-6  col-lg-2 col-md-2">
+                    <div class="header__right">
+                        <div class="dropdown" tab-index="0">
+                            <button id="dropdown-btn"></button>
+                            <ul class="dropdown-content" id="dropdown-content"></ul>
+                          </div>
+                        <div class="bar d-block d-md-none">
+                            <a class="bar-icon siteBar-btn" href="#">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- mobile-menu START -->
+        <div class="mobile-menu">
+            <a href="#" class="bars siteBar-btn"><svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+            </svg></a> 
+            <nav> 
+                <ul id="nav">
+                    <li><a href="#">COMPRA TUS TICKETS</a></li>
+                    <li><a href="#">Horarios</a></li> 
+                    <li><a href="#">Como llegar</a></li> 
+                    <li><a href="#">Normativas</a></li>  
+                    <li><a href="#">Blog</a></li>  
+                </ul>
+            </nav> 
+        </div> 
+    <!-- header-area END -->
+
+
+    <main>
+
+
+
+
+        <!---------hero Section START ---------->
+        <section class="hero-area" style="background-image: url(./assets/img/hero-bg.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" data-aos="fade-right" >
+                        <div class="hero__title">
+                            <h3>Déjate llevar por el arte</h3>
+                            <h1>El Museo del Prado te espera para un viaje inolvidable</h1>
+                        </div>
+                        <div class="hero__form" data-aos="fade-up" >
+                            <h3>Reserva tus entradas ahora</h3>
+                            <p><img src="assets/img/info_icon.svg" alt=""> Últimas entradas disponibles para los próximos 2 dias</p>
+                            <div class=" form__content">
+                                <div class="hero__form__blk">
+                                    <label for="">General</label>
+                                    <div class="Ticket_quantity">
+                                        <button type="button" class=" counter__decrement">-</button>
+                                        <input type="text" class="counter__input" value="0">
+                                        <button type="button" class=" counter__increment">+ </button>
+                                    </div>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <label for="">Reducido</label>
+                                    <div class="Ticket_quantity">
+                                        <button type="button" class=" counter__decrement">-</button>
+                                        <input type="text" class="counter__input" value="0">
+                                        <button type="button" class=" counter__increment">+ </button>
+                                    </div>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <label for="">Niños</label>
+                                    <div class="Ticket_quantity">
+                                        <button type="button" class=" counter__decrement">-</button>
+                                        <input type="text" class="counter__input" value="0">
+                                        <button type="button" class=" counter__increment">+ </button>
+                                    </div>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <label for="">Elige una Fecha</label>
+                                    <input type="text" id="datetimepicker" placeholder="DD / MM / AAAA">
+                                </div>
+                                <div class="hero__form__blk">
+                                    <a href="#" class="thm_btn">Reservar Ahora <img src="assets/img/right-arrow.svg" alt=""></a>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <h1>Total: 54€</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------hero Section End ---------->
+
+
+        <!---------future Section START ---------->
+        <section class="future-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center order-first">
+                        <div class="sec__title" data-aos="fade-down" >
+                            <h1>Bienvenido al Museo Del Prado.</h1>
+                            <p>Aquí encontrará toda la información necesaria para planificar su visita y adquirir entradas para este hermoso museo cargado de historia y magia.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-last order-lg-0">
+                        <div class="future__text" data-aos="fade-up" >
+                            <h1>Donde cada obra de arte es una <span>ventana a la historia</span></h1>
+                            <p>El Museo del Prado, situado <b>en Madrid, España,</b> es un auténtico tesoro artístico de renombre mundial. Desde su apertura en 1819, este icónico museo ha sido un faro de la historia y la cultura, albergando una colección de arte que abarca más de siete siglos, desde el siglo XII hasta el XIX. A través de las páginas del tiempo, los visitantes tienen la oportunidad de explorar la evolución del arte europeo y apreciar una asombrosa variedad de obras maestras de innumerables artistas de renombre.</p>
+
+                            <p>Está ubicado en un impresionante edificio neoclásico diseñado por Juan de Villanueva en el siglo XVIII, es un verdadero viaje en el tiempo a través de la historia artística. Su colección se destaca por sus pinturas españolas, con obras maestras de artistas como Diego Velázquez, cuyo <b>"Las Meninas"</b> es un punto culminante. <b> Velázquez inmortalizó la corte española y dejó una huella imborrable en el arte.</b></p>
+
+                            <p>
+                                <b>Francisco Goya,</b> otro gigante español, se presenta con una amplia gama de obras que abarcan retratos reales y grabados críticos de la sociedad y la guerra. <b>Pero el museo va más allá de lo español, mostrando el misterioso arte flamenco de El Bosco, obras maestras italianas de Tiziano y Rafael, y la maestría holandesa de Rembrandt, entre otros.</b>
+                            </p>
+                            <p>La colección del Prado se extiende por salas y pasillos, ofreciendo un viaje a través de las diferentes escuelas y estilos artísticos. Además de la pintura, el museo alberga esculturas, dibujos y objetos decorativos. Además, su conexión con la realeza española se refleja en muchas de las obras de arte.</p>
+                            <a href="#" class="thm_btn">Quiero reservar mi entrada <img src="assets/img/right-arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-md-0">
+                        <div class="future__img" data-aos="zoom-in" >
+                            <i>
+                                <img src="assets/img/welcome_pic.png" alt="">
+                            </i>
+                            <h6>Cristo Camino del Calvario</h6>
+                            <span>Hacia 1549. Oleo sobre tabla de madera de Roble.</span>
+                            <h4>*Sala 052C.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt_100">
+                    
+                    <div class="col-lg-6">
+                        <div class="future__blk" data-aos="zoom-in" >
+                            <h2><i><img src="assets/img/aislamiento.svg" alt=""></i> Horarios de visita</h2>
+                            <hr>
+                            <p>El Museo Del Prado abre sus puertas de todos los días, de <b>lunes a sábado en horario ininterrumpido de 10 a 20h y los domingos de 10 a 19h.</b></p>
+                        </div>
+                    </div> 
+                    <div class="col-lg-6 ">
+                        <div class="future__blk" data-aos="zoom-in" >
+                            <h2><i><img src="assets/img/info.svg" alt=""></i> Días de cierre en el museo</h2>
+                            <hr>
+                            <p>
+                                <b>* 1 de enero (Año Nuevo)</b>: El museo cerraba sus puertas en el primer día del año. <br>
+                                <b>* 1 de mayo (Día del Trabajador)</b>: También permanecía cerrado en el Día del Trabajador. <br>
+                                <b>* 25 de diciembre (Navidad)</b>: Como es común, el museo no abría el día de Navidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------future Section End ---------->
+
+
+        <!---------asombro Section START ---------->
+        <section class="asombro-area" style="background-image: url(./assets/img/asombro-bg.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="">
+                            <h1 data-aos="fade-up" >Adéntrate en un mundo de asombro y maravilla, donde cada rincón del Museo del Prado revela la grandeza de la creatividad humana.</h1>
+                            <span data-aos="fade-up" >¿Qué podrás encontrar dentro del museo?</span>
+
+                            <p data-aos="fade-up" >El Museo del Prado en Madrid, España, resguarda una destacada colección de obras maestras de artistas españoles e internacionales. Entre los puntos destacados se encuentran obras icónicas de Velázquez como <b>"Las Meninas" y las pinturas de Goya,</b>  incluyendo sus series negras y retratos reales. <b>El museo también alberga obras de El Greco, maestros flamencos y holande ses como Vermeer y Rembrandt,</b> así como piezas italianas de <b>Rafael, Tiziano y Botticelli.</b></p>
+
+                            <p data-aos="fade-up" >
+                                Además de la colección principal, <b>el Museo del Prado exhibe obras de artistas extranjeros</b>, esculturas y objetos decorativos. Las exposiciones temporales ofrecen diferentes perspectivas artísticas, y aunque el enfoque es en arte clásico, también presenta una pequeña pero valiosa colección de <b>arte contemporáneo. La diversidad y calidad de la colección hacen del Museo del Prado un destino esencial para amantes del arte y la cultura,</b> aunque es importante verificar la programación oficial antes de visitar debido a cambios en la exhibición.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------asombro Section End ---------->
+
+
+        <!---------gallery Section START ---------->
+        <section class="gallery-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery__blk" data-aos="zoom-in" >
+                            <img src="assets/img/f-img-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery__blk" data-aos="zoom-in" >
+                            <img src="assets/img/f-img-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery__blk" data-aos="zoom-in" >
+                            <img src="assets/img/f-img-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery__blk" data-aos="zoom-in" >
+                            <img src="assets/img/f-img-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery__blk" data-aos="zoom-in" >
+                            <img src="assets/img/f-img-5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery__blk" data-aos="zoom-in" >
+                            <img src="assets/img/f-img-6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12" data-aos="fade-up" >
+                        <div class="gallery__btn">
+                            <a href="#" class="thm_btn">Quiero reservar mi entrada <img src="assets/img/right-arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------gallery Section End ---------->
+
+
+        <!---------Explora Section START ---------->
+        <section class="Explora-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="Explora__img" data-aos="zoom-in" >
+                            <img src="assets/img/explore.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-right" >
+                        <div class="Explora__content">
+                            <h1>Explora la belleza y la imaginación a través de nuestras impactantes obras</h1>
+
+                            <p>El Museo del Prado, resguarda una notable selección de piezas maestras de artistas tanto españoles como de diversas partes del mundo. Aquí, encontrarás obras Maestras de Velázquez, una selección de las colecciones más sobresalientes de Diego Velázquez, un renombrado maestro de la pintura española. Su famosa obra "Las Meninas" es una de las piezas más emblemáticas del recinto.</p>
+
+                            <p class="m-0">Francisco de Goya, por otro lado, tiene una destacada presencia en las galerías del museo. Sus series de pinturas negras y sus retratos de la familia real son particularmente notables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------Explora Section End ---------->
+
+
+
+        <!---------formas Section START ---------->
+        <section class="formas-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" data-aos="fade-up" >
+                        <div class="sec__title">
+                            <h1>Puedes llegar al Museo del Prado de varias formas, dependiendo de tu ubicación y preferencias.
+                            </h1>
+                        </div>
+                        <div class="formas__map" data-aos="zoom-in" >
+                            <div style="width: 100%"><iframe width="100%" height="570" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=570&amp;hl=en&amp;q=museo%20nacional%20del%20prado+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="formas__accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item" data-aos="fade-up" >
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <i><img src="assets/img/form-img-1.svg" alt=""></i>  Caminando
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <ul>
+                                        <li>
+                                            <p>
+                                                Si te encuentras en la Fuente de Neptuno, estarás a solo un paseo de 4 minutos por el hermoso Paseo del Prado para llegar al Museo del Prado.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Desde el Museo Naval, disfrutarás de un breve paseo de 6 minutos por la calle de Ruiz de Alarcón para llegar al Museo del Prado.</p>
+                                        </li>
+                                        <li>
+                                            <p>Si te encuentras en la Plaza de Cibeles, solo necesitarás 8 minutos de caminata si sigues por el elegante Paseo del Prado para llegar al Museo del Prado.</p>
+                                        </li>
+                                        <li>
+                                            <p>Desde la Puerta de Alcalá, ubicada en la Plaza Independencia, solo te tomará un paseo de 11 minutos a pie para llegar al museo.</p>
+                                        </li>
+                                        <li>
+                                            <p>Si te encuentras en el Círculo de Bellas Artes, las instalaciones del museo están a tan solo 10 minutos de distancia caminando.</p>
+                                        </li>
+                                        <li>
+                                            <p>Desde el Palacio Real de Madrid, una agradable caminata de 25 minutos por el centro de la ciudad te llevará hasta el museo.</p>
+                                        </li>
+                                        <li>
+                                            <p>Desde el Templo de Debod, el recorrido a pie es un poco más largo, aproximadamente 35-40 minutos, pero en el camino podrás disfrutar de la vista de muchos de los puntos turísticos más importantes de Madrid</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item" data-aos="fade-up" >
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i><img src="assets/img/form-img-2.svg" alt=""></i> En metro
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                          <li>
+                                              <p>
+                                                  Si te encuentras en la Fuente de Neptuno, estarás a solo un paseo de 4 minutos por el hermoso Paseo del Prado para llegar al Museo del Prado.
+                                              </p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Museo Naval, disfrutarás de un breve paseo de 6 minutos por la calle de Ruiz de Alarcón para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en la Plaza de Cibeles, solo necesitarás 8 minutos de caminata si sigues por el elegante Paseo del Prado para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde la Puerta de Alcalá, ubicada en la Plaza Independencia, solo te tomará un paseo de 11 minutos a pie para llegar al museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en el Círculo de Bellas Artes, las instalaciones del museo están a tan solo 10 minutos de distancia caminando.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Palacio Real de Madrid, una agradable caminata de 25 minutos por el centro de la ciudad te llevará hasta el museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Templo de Debod, el recorrido a pie es un poco más largo, aproximadamente 35-40 minutos, pero en el camino podrás disfrutar de la vista de muchos de los puntos turísticos más importantes de Madrid</p>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item" data-aos="fade-up" >
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i><img src="assets/img/form-img-3.svg" alt=""></i>  En taxi
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                          <li>
+                                              <p>
+                                                  Si te encuentras en la Fuente de Neptuno, estarás a solo un paseo de 4 minutos por el hermoso Paseo del Prado para llegar al Museo del Prado.
+                                              </p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Museo Naval, disfrutarás de un breve paseo de 6 minutos por la calle de Ruiz de Alarcón para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en la Plaza de Cibeles, solo necesitarás 8 minutos de caminata si sigues por el elegante Paseo del Prado para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde la Puerta de Alcalá, ubicada en la Plaza Independencia, solo te tomará un paseo de 11 minutos a pie para llegar al museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en el Círculo de Bellas Artes, las instalaciones del museo están a tan solo 10 minutos de distancia caminando.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Palacio Real de Madrid, una agradable caminata de 25 minutos por el centro de la ciudad te llevará hasta el museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Templo de Debod, el recorrido a pie es un poco más largo, aproximadamente 35-40 minutos, pero en el camino podrás disfrutar de la vista de muchos de los puntos turísticos más importantes de Madrid</p>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item" data-aos="fade-up" >
+                                  <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <i><img src="assets/img/form-img-4.svg" alt=""></i> En autobús
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                          <li>
+                                              <p>
+                                                  Si te encuentras en la Fuente de Neptuno, estarás a solo un paseo de 4 minutos por el hermoso Paseo del Prado para llegar al Museo del Prado.
+                                              </p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Museo Naval, disfrutarás de un breve paseo de 6 minutos por la calle de Ruiz de Alarcón para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en la Plaza de Cibeles, solo necesitarás 8 minutos de caminata si sigues por el elegante Paseo del Prado para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde la Puerta de Alcalá, ubicada en la Plaza Independencia, solo te tomará un paseo de 11 minutos a pie para llegar al museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en el Círculo de Bellas Artes, las instalaciones del museo están a tan solo 10 minutos de distancia caminando.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Palacio Real de Madrid, una agradable caminata de 25 minutos por el centro de la ciudad te llevará hasta el museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Templo de Debod, el recorrido a pie es un poco más largo, aproximadamente 35-40 minutos, pero en el camino podrás disfrutar de la vista de muchos de los puntos turísticos más importantes de Madrid</p>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item" data-aos="fade-up" >
+                                  <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <i><img src="assets/img/form-img-5.svg" alt=""></i> En bicicleta
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                          <li>
+                                              <p>
+                                                  Si te encuentras en la Fuente de Neptuno, estarás a solo un paseo de 4 minutos por el hermoso Paseo del Prado para llegar al Museo del Prado.
+                                              </p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Museo Naval, disfrutarás de un breve paseo de 6 minutos por la calle de Ruiz de Alarcón para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en la Plaza de Cibeles, solo necesitarás 8 minutos de caminata si sigues por el elegante Paseo del Prado para llegar al Museo del Prado.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde la Puerta de Alcalá, ubicada en la Plaza Independencia, solo te tomará un paseo de 11 minutos a pie para llegar al museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Si te encuentras en el Círculo de Bellas Artes, las instalaciones del museo están a tan solo 10 minutos de distancia caminando.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Palacio Real de Madrid, una agradable caminata de 25 minutos por el centro de la ciudad te llevará hasta el museo.</p>
+                                          </li>
+                                          <li>
+                                              <p>Desde el Templo de Debod, el recorrido a pie es un poco más largo, aproximadamente 35-40 minutos, pero en el camino podrás disfrutar de la vista de muchos de los puntos turísticos más importantes de Madrid</p>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------formas Section End ---------->
+
+
+
+        <!---------nuestro Section START ---------->
+        <section class="nuestro-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-right" >
+                        <div class="nuestro__content">
+                            <h3>Para preservar nuestro patrimonio y tu bienestar, te pedimos que cumplas con <span>nuestras normativas de acceso.</span></h3>
+                            <ul>
+                                <li><b>Interacción con las Obras de Arte</b>: Se ruega a los visitantes abstenerse de tocar las obras de arte en exhibición, a fin de preservar su integridad. Se solicita mantener una distancia adecuada para evitar cualquier posible daño.</li>
+
+                                <li><b>Fotografía y Filmación</b>: Por lo general, está permitido tomar fotografías <b>sin flash con fines personales en las salas del museo.</b> No obstante, el uso de trípodes y equipo profesional de filmación o fotografía puede estar sujeto a restricciones.</li>
+
+                                <li><b>Objetos Voluminosos y Mochilas</b>: Se sugiere a los visitantes <b>dejar en el guardarropa mochilas grandes y objetos voluminosos para evitar cualquier daño</b> a las obras de arte y garantizar la comodidad y seguridad del espacio.</li>
+
+                                <li><b>Silencio y Cortesía</b>: Se espera que los visitantes <b>mantengan un tono de voz bajo</b> y muestren respeto hacia otros visitantes y el personal del museo, creando así un ambiente tranquilo y respetuoso.</li>
+
+                                <li><b>Prohibición de Comer o Beber</b>: Para preservar el ambiente y la limpieza del lugar, está <b>prohibido consumir alimentos o bebidas en las salas del museo.</b></li>
+
+                                <li><b>Mascotas y Perros Guía</b>: Por razones de higiene y para la protección de las obras de arte, se ruega a los visitantes <b> no ingresar con mascotas, salvo en el caso de perros guía debidamente identificados.</b></li>
+
+                                <li><b>Seguridad y Evacuación</b>: En caso de una emergencia o evacuación, se solicita a los visitantes seguir las instrucciones del personal del museo para garantizar la seguridad de todos.</li>
+
+                                <li><b>Prohibición de Fumar</b>: Por el bienestar de todos los visitantes y la preservación del museo, se prohíbe fumar dentro de las instalaciones.</li>
+
+                                <li><b>Posibles Restricciones de Acceso</b>: Algunas áreas o salas del museo podrían tener restricciones de acceso debido a exposiciones temporales, trabajos de restauración u otras razones. Agradecemos tu comprensión.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="nuestro__img" data-aos="fade-up" >
+                            <i><img src="assets/img/nuestro-img.png" alt=""></i>
+                            <span>Recuerda que estas normas están diseñadas para garantizar una experiencia segura y respetuosa para todos los visitantes y para la preservación de las valiosas obras de arte en exhibición.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------nuestro Section End ---------->
+
+
+
+        <!---------Total Section START ---------->
+        <section class="Total-area">
+            <div class="container">
+                <div class="Total__wrp">
+                    <div class="row" data-aos="fade-up" >
+                        <div class="col-lg-6">
+                            <div class="Total__content">
+                                <h1>No te quedes sin entrar.
+                                    Reserva tus entradas ahora.
+                                </h1>
+                                <p>Compra tus entradas anticipadas: la única manera de asegurar tu visita. Sumérgete en la impresionante pinacoteca y las esculturas de ensueño del Museo del Prado de Madrid.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class=" form__content">
+                                <div class="hero__form__blk">
+                                    <label for="">General</label>
+                                    <div class="Ticket_quantity">
+                                        <button type="button" class=" counter__decrement">-</button>
+                                        <input type="text" class="counter__input" value="0">
+                                        <button type="button" class=" counter__increment">+ </button>
+                                    </div>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <label for="">Reducido</label>
+                                    <div class="Ticket_quantity">
+                                        <button type="button" class=" counter__decrement">-</button>
+                                        <input type="text" class="counter__input" value="0">
+                                        <button type="button" class=" counter__increment">+ </button>
+                                    </div>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <label for="">Niños</label>
+                                    <div class="Ticket_quantity">
+                                        <button type="button" class=" counter__decrement">-</button>
+                                        <input type="text" class="counter__input" value="0">
+                                        <button type="button" class=" counter__increment">+ </button>
+                                    </div>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <label for="">Elige una Fecha</label>
+                                    <input type="text" id="datetimepickerTwo"  placeholder="DD / MM / AAAA">
+                                </div>
+                                <div class="hero__form__blk">
+                                    <a href="#" class="thm_btn">Reservar Ahora <img src="assets/img/right-arrow.svg" alt=""></a>
+                                </div>
+                                <div class="hero__form__blk">
+                                    <h1>Total: 54€</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------Total Section End ---------->
+
+        <!--------- Section START ---------->
+        <section class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12"></div>
+                </div>
+            </div>
+        </section>
+        <!--------- Section End ---------->
+ 
+
+    </main>
+
+        <!---------footer Section START ---------->
+        <footer class="footer-area f__home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" data-aos="fade-up" >
+                        <div class="footer__nav">
+                            <ul>
+                                <li>
+                                    <div class="visacard__content">
+                                        <p>Formas de pago aceptadas</p>
+                                        <a href="#"><img src="assets/img/card-icon.svg" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="footer__content" data-aos="zoom-in" >
+                            <h1>Consigue tus entradas sin esperas</h1>
+                            <a href="#" class="thm_btn">¿Alguna pregunta?</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="footer__btn">
+                            <p>Copyright 2023</p>
+                            <ul>
+                                <li><a href="#">Términos y condiciones</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">Política de cookies</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">Condiciones generales de acceso y utilización</a></li>
+                            </ul>
+                            <a href="#" class="logo-f"><img src="assets/img/f-logo.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---------footer Section End ---------->
+    
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/aos.js"></script> 
+        <script src="assets/js/jquery.datetimepicker.full.min.js"></script> 
+        <script src="assets/js/main.js"></script>
+ 
+    </body>
+</html>
